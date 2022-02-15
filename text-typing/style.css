@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: "Poppins", san-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #343f4f;
+  line-height: 1;
+}
+
+.wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+.wrapper .dynamic-txts li {
+  font-size: 60px;
+  font-weight: 500;
+  list-style: none;
+  color: #fc6d6d;
+  position: relative;
+  top: 0;
+  -webkit-animation: slide 12s steps(4) infinite;
+          animation: slide 12s steps(4) infinite;
+}
+
+.wrapper .dynamic-txts li span {
+  position: relative;
+}
+
+.wrapper .dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  border-left: 2px solid #fc6d6d;
+  -webkit-animation: typing 3s steps(10) infinite;
+          animation: typing 3s steps(10) infinite;
+  background: #343f4f;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    top: -320px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -320px;
+  }
+}
+
+@-webkit-keyframes typing {
+  50% {
+    left: 100%;
+    margin: 0 -20px 0 20px;
+  }
+  100% {
+    left: 0%;
+    margin: 0 -20px 0 20px;
+  }
+}
+
+@keyframes typing {
+  50% {
+    left: 100%;
+    margin: 0 -20px 0 20px;
+  }
+  100% {
+    left: 0%;
+    margin: 0 -20px 0 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
